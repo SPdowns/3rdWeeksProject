@@ -14,6 +14,8 @@
 
 //   });
 
+// var spanNumber = function(count)
+
 // Front End
 
 $(document).ready(function() {
@@ -22,8 +24,8 @@ $(document).ready(function() {
 
   
     var firstNumber = $("input#input1").val();
-    var lastNumber = firstNumber;
+    // var lastNumber = firstNumber;
     
-    $("#result").text(lastNumber);
+    $("#result").text(firstNumber);
   });
 });
