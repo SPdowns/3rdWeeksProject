@@ -1,10 +1,12 @@
 // Back End
 // var tiggerNumber = [1, 2, 3]
-var replacments = ["beep", "boop", "Won't you be my neighbor?"]
+function mrRodgers(firstNumber)
+  var replacments = ["beep", "boop", "Won't you be my neighbor?"]
 
 
  var firstReturn = firstNumber.split("")
   console.log firstReturn
+
 //   var inputNumber = firstNumber.split("");
 //   var outputNumber = inputNumber.map(function();
 
@@ -18,9 +20,9 @@ var replacments = ["beep", "boop", "Won't you be my neighbor?"]
 // var spanNumber = function(count)
 
 
-for(var i = 0; i < firstNumber.length; i++){
-    return i
-  }
+// for(var i = 0; i < firstNumber.length; i++){
+//     return i
+//   }
 
 
 // Front End
