@@ -4,13 +4,6 @@ function mrRodgers(firstNumber) {
   // var tiggerNumber = [1, 2, 3]
   var replacments = ["beep", "boop", "Won't you be my neighbor?"]
 
-
- var firstReturn = firstNumber.toString().split("");
-  if (firstReturn.includes("3")) {
-    return replacments[2];
-  } else
-  console.log(firstReturn)
-
   var countingNumbers = [];
 
   for (var i = 1; i<= firstNumber; i++) {
@@ -18,6 +11,10 @@ function mrRodgers(firstNumber) {
     var x = i.toString()
       if (x === "3") {
       countingNumbers.push(replacments[2]);
+      } else if (x === "2") {
+      countingNumbers.push(replacments[1]);
+      } else if (x === "1") {
+      countingNumbers.push(replacments[0])
       } else {
       countingNumbers.push(x);
       }
