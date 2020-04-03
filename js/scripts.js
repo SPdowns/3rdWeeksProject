@@ -1,16 +1,18 @@
 // Back End
-var tiggerNumber = [1, 2, 3]
-var replacments = ["beep", "boop", "Won't you be my neighbor?"]
+// var tiggerNumber = [1, 2, 3]
+// var replacments = ["beep", "boop", "Won't you be my neighbor?"]
 
 
- var finalNumber = function(firstNumber) {
-  var inputNumber = firstNumber.split("")
-  var outputNumber = inputNumber.map(function())
+//  var finalNumber = function(firstNumber) {
+//   var inputNumber = firstNumber.split("");
+//   var outputNumber = inputNumber.map(function();
 
 
-  if (tiggerNumber.includes(firstNumber)) {
 
-  });
+//   if (tiggerNumber.includes(firstNumber)) {
+//     return (outputNumber + "Beep")
+
+//   });
 
 // Front End
 
