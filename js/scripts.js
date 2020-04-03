@@ -2,15 +2,13 @@
 
 function mrRodgers(firstNumber) {
   
-  var replacments = ["beep", "boop", "Won't you be my neighbor?", "Not a Number Bruh"]
+  var replacments = ["beep", "boop", "Won't you be my neighbor?"]
   var countingNumbers = [];
 
   for (var i = 0; i<= firstNumber; i++) {
     console.log(i)
     var x = i.toString()
-      if (isNaN(x)) {
-      countingNumbers.push(replacments[4]);
-      } else if (x.includes("3")) {
+      if (x.includes("3")) {
       countingNumbers.push(replacments[2]);
       } else if (x.includes ("2")) {
       countingNumbers.push(replacments[1]);
@@ -32,9 +30,8 @@ $(document).ready(function() {
 
   
     var firstNumber = parseInt($("input#input1").val());
-    var lastNumber = mrRodgers(firstNumber);
     
     $("#result").show();
-    $("#result").text(lastNumber);
+    $("#result").text(mrRodgers(firstNumber));
   });
 });
