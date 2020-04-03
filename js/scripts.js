@@ -1,12 +1,23 @@
 // Back End
-// var tiggerNumber = [1, 2, 3]
-function mrRodgers(firstNumber)
+
+function mrRodgers(firstNumber) {
+  // var tiggerNumber = [1, 2, 3]
   var replacments = ["beep", "boop", "Won't you be my neighbor?"]
 
 
- var firstReturn = firstNumber.split("")
-  console.log firstReturn
+ var firstReturn = firstNumber.toString().split("");
+  if (firstReturn.includes(3)) {
+    return replacments[2];
+  }
 
+  var countingNumbers = [];
+
+  for (var i = 0; i<= firstNumber; i++) {
+    console.log(i)
+    if (i === 3) {
+      countingNumbers.push(replacments[2]);
+    }
+  }
 //   var inputNumber = firstNumber.split("");
 //   var outputNumber = inputNumber.map(function();
 
@@ -20,9 +31,7 @@ function mrRodgers(firstNumber)
 // var spanNumber = function(count)
 
 
-// for(var i = 0; i < firstNumber.length; i++){
-//     return i
-//   }
+}
 
 
 // Front End
@@ -33,8 +42,8 @@ $(document).ready(function() {
 
   
     var firstNumber = $("input#input1").val();
-    var lastNumber = firstNumber;
+    var lastNumber = mrRodgers(firstNumber);
     
-    $("#result").text(firstNumber);
+    $("#result").text(lastNumber);
   });
 });
