@@ -2,7 +2,7 @@
 
 function mrRodgers(firstNumber) {
   
-  var replacments = ["beep", "boop", "Won't you be my neighbor?"]
+  var replacments = [" Beep", " Boop", " Won't you be my neighbor?", " Not a Number Bruh"]
   var countingNumbers = [];
 
   for (var i = 0; i<= firstNumber; i++) {
@@ -15,7 +15,7 @@ function mrRodgers(firstNumber) {
       } else if (x.includes ("1")) {
       countingNumbers.push(replacments[0])
       } else {
-      countingNumbers.push(x);
+      countingNumbers.push(x)
       }
   }
     
@@ -30,8 +30,9 @@ $(document).ready(function() {
 
   
     var firstNumber = parseInt($("input#input1").val());
+    var lastNumber = mrRodgers(firstNumber);
     
     $("#result").show();
-    $("#result").text(mrRodgers(firstNumber));
+    $("#result").text(lastNumber);
   });
 });
