@@ -15,15 +15,15 @@ function mrRodgers(firstNumber) {
 
   for (var i = 1; i<= firstNumber; i++) {
     console.log(i)
-    var x = i.toString().split('');
+    var x = i.toString()
       if (x === "3") {
       countingNumbers.push(replacments[2]);
       } else {
-      countingNumbers.push(i.toString());
+      countingNumbers.push(x);
       }
   }
     
-    console.log(countingNumbers)
+    console.log(x)
     return countingNumbers
 }
 //   var inputNumber = firstNumber.split("");
