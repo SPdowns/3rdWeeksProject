@@ -1,0 +1,18 @@
+.jumbotron {
+  text-align: center;
+  text-shadow: 2px 2px 20px whitesmoke;
+  background-image: linear-gradient(to right top, #e1d8ff, #d3cefa, #c4c5f6, #b3bcf2, #a1b3ed, #93a5e6, #8697df, #7a89d8, #7871c9, #7a56b7, #7d38a1, #7f0087);
+}
+
+.spots {
+  background-image: linear-gradient(to right top, #e1d8ff, #d3cefa, #c4c5f6, #b3bcf2, #a1b3ed, #93a5e6, #8697df, #7a89d8, #7871c9, #7a56b7, #7d38a1, #7f0087);
+}
+
+#result {
+  display: none;
+}
+
+body {
+  background-image: url(../img/background.png);
+  overflow: scroll;
+}
