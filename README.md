@@ -55,14 +55,19 @@ _Mr. Rodgers Exercise is a program that takes a number from the user, counts fro
 
 Chrome ver 10
 
+Enter a number into the input field
+
+Click on submit
+
+Div will reveal with answer below
+
   
 
   
 
 Access via git-pages :
 
-https://spdowns.github.io/
-
+https://spdowns.github.io/3rdWeeksProject/
   
 
 ## Known Bugs
