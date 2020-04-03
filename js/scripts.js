@@ -6,7 +6,7 @@ function mrRodgers(firstNumber) {
 
 
  var firstReturn = firstNumber.toString().split("");
-  if (firstReturn.includes(3)) {
+  if (firstReturn.includes("3")) {
     return replacments[2];
   }
 
@@ -16,7 +16,10 @@ function mrRodgers(firstNumber) {
     console.log(i)
     if (i === 3) {
       countingNumbers.push(replacments[2]);
+    } else { 
+      countingNumbers.push(i);
     }
+  return countingNumbers;
   }
 //   var inputNumber = firstNumber.split("");
 //   var outputNumber = inputNumber.map(function();
@@ -41,7 +44,7 @@ $(document).ready(function() {
     event.preventDefault();
 
   
-    var firstNumber = $("input#input1").val();
+    var firstNumber = parseInt($("input#input1").val());
     var lastNumber = mrRodgers(firstNumber);
     
     $("#result").text(lastNumber);
