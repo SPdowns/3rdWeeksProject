@@ -8,19 +8,24 @@ function mrRodgers(firstNumber) {
  var firstReturn = firstNumber.toString().split("");
   if (firstReturn.includes("3")) {
     return replacments[2];
-  }
+  } else
+  console.log(firstReturn)
 
   var countingNumbers = [];
 
-  for (var i = 0; i<= firstNumber; i++) {
+  for (var i = 1; i<= firstNumber; i++) {
     console.log(i)
-    if (i === 3) {
+    var x = i.toString().split('');
+      if (x === "3") {
       countingNumbers.push(replacments[2]);
-    } else { 
-      countingNumbers.push(i);
-    }
-  return countingNumbers;
+      } else {
+      countingNumbers.push(i.toString());
+      }
   }
+    
+    console.log(countingNumbers)
+    return countingNumbers
+}
 //   var inputNumber = firstNumber.split("");
 //   var outputNumber = inputNumber.map(function();
 
@@ -34,7 +39,6 @@ function mrRodgers(firstNumber) {
 // var spanNumber = function(count)
 
 
-}
 
 
 // Front End
