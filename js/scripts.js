@@ -7,15 +7,21 @@ var replacments = ["beep", "boop", "Won't you be my neighbor?"]
   var inputNumber = firstNumber.split("")
   var outputNumber = inputNumber.map(function())
 
- }
+
+  if (tiggerNumber.includes(firstNumber)) {
+
+  });
 
 // Front End
 
-$(document).ready(function(){
-  $("form#input").submit(function(event){
+$(document).ready(function() {
+  $("form#formForm").submit(function(event) {
     event.preventDefault();
+
   
-    var firstNumber = parseint($("input#input").val());
-   
-    $(".output").html();
+    var firstNumber = $("input#input1").val();
+    var lastNumber = firstNumber;
+    
+    $("#result").text(lastNumber);
+  });
 });
