@@ -15,6 +15,12 @@
 //   });
 
 // var spanNumber = function(count)
+  for(var i = 0; i < firstNumber.length; i++){
+    return i
+  }
+
+ 
+
 
 // Front End
 
